@@ -1,0 +1,1 @@
+int hhh(void);
