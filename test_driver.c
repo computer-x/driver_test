@@ -25,6 +25,16 @@ static int __init hello_init(void)
         printk(KERN_ALERT "para[%d]: %d\n", i, para[i]);
     }
 
+    int testout = 1234;
+    printk(KERN_ALERT "\n");
+    printk(KERN_EMERG "KERN_EMERG: %d\n", testout);
+    printk(KERN_ALERT "KERN_ALERT: %d\n", testout);
+    printk(KERN_CRIT "KERN_CRIT: %d\n", testout);
+    printk(KERN_ERR "KERN_ERR: %d\n", testout);
+    printk(KERN_WARNING "KERN_WARNING: %d\n", testout);
+    printk(KERN_NOTICE "KERN_NOTICE: %d\n", testout);
+    printk(KERN_INFO "KERN_INFO: %d\n", testout);
+    printk(KERN_DEBUG "KERN_DEBUG: %d\n", testout);
 
     return 0;
 }
